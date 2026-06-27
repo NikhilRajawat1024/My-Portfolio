@@ -1,6 +1,7 @@
 import Navbar from './components/layout/Navbar'
 import Hero from './sections/Hero'
 import About from './sections/About'
+import Services from './sections/Services'
 
 function App() {
   return (
@@ -8,11 +9,9 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Services />
       
-      {/* Placeholder sections – will be filled in later sprints */}
-      <section id="services" className="h-screen flex items-center justify-center">
-        <h1 className="text-4xl font-bold">Services</h1>
-      </section>
+      {/* Placeholders for upcoming sprints */}
       <section id="projects" className="h-screen flex items-center justify-center">
         <h1 className="text-4xl font-bold">Projects</h1>
       </section>
