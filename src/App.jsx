@@ -4,6 +4,9 @@ import About from './sections/About'
 import Services from './sections/Services'
 import Projects from './sections/Projects'
 import Testimonials from './sections/Testimonials'
+import Contact from './sections/Contact'
+import Footer from './components/layout/Footer'
+import BackToTop from './components/common/BackToTop'
 
 function App() {
   return (
@@ -14,11 +17,9 @@ function App() {
       <Services />
       <Projects />
       <Testimonials />
-      
-      {/* Placeholder for Contact */}
-      <section id="contact" className="h-screen flex items-center justify-center">
-        <h1 className="text-4xl font-bold">Contact</h1>
-      </section>
+      <Contact />
+      <Footer />
+      <BackToTop />
     </div>
   )
 }
