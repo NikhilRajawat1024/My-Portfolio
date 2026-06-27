@@ -3,6 +3,7 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Services from './sections/Services'
 import Projects from './sections/Projects'
+import Testimonials from './sections/Testimonials'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Services />
       <Projects />
+      <Testimonials />
       
       {/* Placeholder for Contact */}
       <section id="contact" className="h-screen flex items-center justify-center">
