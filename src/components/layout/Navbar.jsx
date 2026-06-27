@@ -36,7 +36,7 @@ const Navbar = () => {
         {/* Logo */}
         <ScrollLink to="hero" smooth duration={500} className="cursor-pointer">
           <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
-            NR Studio
+            Designnest
           </span>
         </ScrollLink>
 

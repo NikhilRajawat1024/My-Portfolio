@@ -16,7 +16,7 @@ const Footer = () => {
     { icon: <FaGithub />, href: '#', label: 'GitHub' },
     { icon: <FaLinkedin />, href: '#', label: 'LinkedIn' },
     { icon: <FaTwitter />, href: '#', label: 'Twitter' },
-    { icon: <FaEnvelope />, href: 'mailto:hello@nrstudiodev.com', label: 'Email' },
+    { icon: <FaEnvelope />, href: 'designnest1824@gmail.com', label: 'Email' },
   ]
 
   return (
@@ -27,7 +27,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <ScrollLink to="hero" smooth duration={500} className="cursor-pointer inline-block">
               <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
-                NR Studio
+                Designnest
               </span>
             </ScrollLink>
             <p className="text-sm text-gray-400 mt-4 leading-relaxed max-w-xs">
@@ -84,8 +84,8 @@ const Footer = () => {
             <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Get in Touch</h4>
             <ul className="space-y-3">
               <li className="text-sm text-gray-400">
-                <a href="mailto:hello@nrstudiodev.com" className="hover:text-white transition-colors">
-                  hello@nrstudiodev.com
+                <a href="mailto:designnest1824@gmail.com" className="hover:text-white transition-colors">
+                  designnest1824@gmail.com
                 </a>
               </li>
               <li className="text-sm text-gray-400">
@@ -101,7 +101,7 @@ const Footer = () => {
         {/* Divider + Copyright */}
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           <p>
-            &copy; {currentYear} <span className="text-white font-medium">NR Studio</span>. All rights reserved.
+            &copy; {currentYear} <span className="text-white font-medium">Designnest</span>. All rights reserved.
           </p>
           <p className="flex items-center gap-1">
             Built with <span className="text-red-500">❤️</span> using React &amp; .NET
