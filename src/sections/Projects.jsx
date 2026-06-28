@@ -12,8 +12,8 @@ const Projects = () => {
       description: 'Custom membership portal with class booking, payment integration, and client progress tracking.',
       tags: ['React', '.NET', 'Stripe'],
       gradient: 'from-orange-500/30 to-red-500/30',
-  // Add this new link property or just hardcode the href in the JSX
-},
+      // Add this new link property or just hardcode the href in the JSX
+    },
     {
       id: 2,
       icon: <FaUtensils className="text-4xl text-emerald-400" />,
@@ -22,6 +22,7 @@ const Projects = () => {
       description: 'Online ordering system with real-time inventory, reservation management, and loyalty rewards.',
       tags: ['React', 'Entity Framework', 'MySQL'],
       gradient: 'from-emerald-500/30 to-teal-500/30',
+      // Add a flag or just handle in JSX
     },
     {
       id: 3,
@@ -116,26 +117,37 @@ const Projects = () => {
       </div>
 
       {/* LINK: View Live Demo (only for the gym project) */}
-      {project.id === 1 ? (
-        <a
-          href="https://iron-forge-gym-black.vercel.app/" // 👈 REPLACE WITH YOUR GYM URL
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-5 pt-4 border-t border-white/5 flex items-center justify-between w-full group"
-        >
-          <span className="text-sm font-medium text-gray-400 group-hover:text-purple-400 transition-colors">
-            View Live Demo
-          </span>
-          <FaArrowRight className="text-sm text-gray-500 group-hover:text-purple-400 group-hover:translate-x-1 transition-all" />
-        </a>
-      ) : (
-        <div className="mt-5 pt-4 border-t border-white/5 flex items-center justify-between">
-          <span className="text-sm font-medium text-gray-400 cursor-pointer">
-            Coming Soon
-          </span>
-        </div>
-      )}
-    </div>
+<div className="mt-5 pt-4 border-t border-white/5 flex items-center justify-between w-full"></div>
+     {project.id === 1 ? (
+    <a
+      href="https://iron-forge-gym.vercel.app"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center justify-between w-full group"
+    >
+      <span className="text-sm font-medium text-gray-400 group-hover:text-purple-400 transition-colors">
+        View Live Demo
+      </span>
+      <FaArrowRight className="text-sm text-gray-500 group-hover:text-purple-400 group-hover:translate-x-1 transition-all" />
+    </a>
+  ) : project.id === 2 ? (
+      <a
+      href="https://restaurent-template-nine.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center justify-between w-full group"
+    >
+      <span className="text-sm font-medium text-gray-400 group-hover:text-purple-400 transition-colors">
+        View Live Demo
+      </span>
+      <FaArrowRight className="text-sm text-gray-500 group-hover:text-purple-400 group-hover:translate-x-1 transition-all" />
+    </a>
+  ) : (
+    <span className="text-sm font-medium text-gray-400 cursor-pointer">
+      Coming Soon
+    </span>
+  )}
+</div>
   </motion.div>
 ))}
         </motion.div>
